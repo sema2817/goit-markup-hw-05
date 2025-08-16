@@ -82,6 +82,8 @@ body {
 .modalbg {
   z-index: 1000;
   width: 408px;
+  padding-left: 24px;
+  padding-right: 24px;
   /*padding: 112px 24px 136px 24px;*/
   background-color: rgba(252, 252, 252, 1);
   border-radius: 4px;
@@ -90,6 +92,24 @@ body {
   display: flex;
   flex-direction: column;
   gap: 4px;
+}
+.modalformlabel {
+  color: #8e8f99;
+  font-size: 12px;
+}
+.modalforminput {
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  padding: 11px 322px 11px 38px;
+}
+.modalforminput:focus,
+.modalforminput:hover {
+  border-color: #4d5ae5;
+}
+.formicon {
+  width: 18px;
+  height: 24px;
+  fill: #2e2f42;
 }
 .ourportfolio ul,
 .ourteam,
