@@ -50,10 +50,22 @@
         <form class="modalform">
           <div class="modalformcontainer">
             <label class="modalformlabel" for="name">Name</label>
-            <input type="text" class="modalforminput" name="name" id="name"/>
-          <svg class="formicon">
-            <use href="./images/personvectoroptimized.svg"></use>
-          </svg>
+            <div class="modalformwrapper">
+              <input type="text" class="modalforminput" name="name" id="name"/>
+          <svg class="formicon" xmlns="http://www.w3.org/2000/svg"><path d="M6 6a3 3 0 1 0 0-6 3 3 0 1 0 0 6Zm0 1.5c-2.002 0-6 1.005-6 3v.75c0 .412.338.75.75.75h10.5c.412 0 .75-.338.75-.75v-.75c0-1.995-3.998-3-6-3Z"/></svg>
+            </div>
+            <label class="modalformlabel" for="phone">Phone</label>
+            <div class="modalformwrapper">
+              <input type="tel" class="modalforminput" name="phone" id="phone"/>
+          <svg class="formicon" xmlns="http://www.w3.org/2000/svg" ><path d="m11.726 8.865-1.838-.21a1.44 1.44 0 0 0-1.187.413L7.37 10.399A10.888 10.888 0 0 1 2.6 5.63l1.34-1.339a1.44 1.44 0 0 0 .412-1.186l-.21-1.824A1.448 1.448 0 0 0 2.702 0H1.45C.632 0-.048.68.003 1.498c.383 6.18 5.326 11.116 11.499 11.5.818.05 1.498-.63 1.498-1.448v-1.252a1.434 1.434 0 0 0-1.274-1.433Z"/></svg>
+            </div>
+            <label class="modalformlabel" for="email">Email</label>
+            <div class="modalformwrapper">
+              <input type="email" class="modalforminput" name="email" id="email"/>
+          <svg class="formicon" xmlns="http://www.w3.org/2000/svg"><path d="M14 0H2C1.175 0 .507.675.507 1.5l-.007 9c0 .825.675 1.5 1.5 1.5h12c.825 0 1.5-.675 1.5-1.5v-9C15.5.675 14.825 0 14 0Zm-.3 3.188L8.398 6.502a.759.759 0 0 1-.795 0L2.3 3.187a.637.637 0 1 1 .675-1.08L8 5.25l5.025-3.143a.637.637 0 1 1 .675 1.08Z"/></svg>
+            </div>
+            <label class="modalformlabel" for="comment">Comment</label>
+            <textarea class="modalforminput" rows="7"></textarea>
           </div>
         </form>
       </div>

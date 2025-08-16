@@ -99,17 +99,30 @@ body {
 }
 .modalforminput {
   border: 1px solid rgba(46, 47, 66, 0.4);
+  width: 360px;
   border-radius: 4px;
-  padding: 11px 322px 11px 38px;
+  padding: 11px;
+  padding-left: 38px;
 }
 .modalforminput:focus,
 .modalforminput:hover {
   border-color: #4d5ae5;
 }
 .formicon {
-  width: 18px;
+  position: absolute;
+  top: 14px;
+  left: 17px;
   height: 24px;
   fill: #2e2f42;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modalformwrapper {
+  display: flex;
+  position: relative;
+}
+.modalforminput:focus + .formicon,
+.modalforminput:hover + .formicon {
+  fill: #4d5ae5;
 }
 .ourportfolio ul,
 .ourteam,
