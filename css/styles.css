@@ -3,6 +3,19 @@
 *::after {
   box-sizing: content-box;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 h1,
 h2,
 h3,
@@ -94,6 +107,8 @@ body {
   gap: 4px;
 }
 .modalformlabel {
+  display: flex;
+  gap: 8px;
   color: #8e8f99;
   font-size: 12px;
 }
@@ -123,6 +138,24 @@ body {
 .modalforminput:focus + .formicon,
 .modalforminput:hover + .formicon {
   fill: #4d5ae5;
+}
+.modalcheckboxwrapper {
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modalformcheckbox:checked + .modalcheckboxwrapper {
+  background-color: #404bbf;
+}
+.tikcik {
+  fill: transparent;
+}
+.modalformcheckbox:checked + .modalcheckboxwrapper .tikcik {
+  fill: #f4f4fd;
 }
 .ourportfolio ul,
 .ourteam,
