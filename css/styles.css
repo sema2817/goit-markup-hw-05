@@ -186,9 +186,10 @@ body {
 }
 .formicon {
   position: absolute;
-  top: 14px;
-  left: 17px;
-  height: 24px;
+  top: 13px;
+  left: 15px;
+  width: 16px;
+  height: 16px;
   fill: #2e2f42;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
