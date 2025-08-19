@@ -120,8 +120,17 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 .x {
+  fill: #2e2f42;
   width: 8px;
   height: 8px;
+}
+.circle:hover,
+.circle:focus {
+  background-color: #404bbf;
+}
+.circle:hover .x,
+.circle:focus .x {
+  fill: #ffffff;
 }
 .modaltitle {
   margin-top: 72px;
