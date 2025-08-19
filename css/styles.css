@@ -81,16 +81,19 @@ body {
   color: #434455;
 }
 .modal {
+  display: none;
   position: fixed;
   top: 0;
   bottom: 0;
   right: 0;
   left: 0;
-  background-color: rgba(46, 47, 66, 0.4);
-  display: flex;
   justify-content: center;
   align-items: center;
   z-index: 999;
+}
+.modal.is-open {
+  display: flex;
+  background-color: rgba(46, 47, 66, 0.4);
 }
 .modalbg {
   position: relative;
@@ -249,6 +252,9 @@ body {
   padding-bottom: 8px;
   padding-left: 16px;
   font-size: 12px;
+}
+.footerformmail::placeholder {
+  color: #ffffff;
 }
 .footersubs {
   height: 80px;
